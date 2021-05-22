@@ -3,7 +3,9 @@
 [ext_resource path="res://assets/PNG/Enemies/enemyBlack1.png" type="Texture" id=1]
 [ext_resource path="res://src/EnemyBasic.gd" type="Script" id=2]
 
-[node name="EnemyBasic" type="KinematicBody2D"]
+[node name="EnemyBasic" type="Area2D" groups=[
+"enemy",
+]]
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
